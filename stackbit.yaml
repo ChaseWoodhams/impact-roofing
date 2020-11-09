@@ -1,0 +1,35 @@
+stackbitVersion: "~0.3.0"
+ssgName: "custom"
+buildCommand: "npx @11ty/eleventy"
+publishDir: "public"
+staticDir: "static"
+uploadDir: "images"
+pagesDir: "site"
+metadata:
+  title: "impact roofing e688be7013d21e6523ae183c"
+  description: "Theme created in Webflow and converted with Udesly"
+models:
+  project:
+    type: "page"
+    label: "Projects"
+    urlPath: "/project/{slug}"
+  tag:
+    type: "page"
+    label: "Tags"
+    urlPath: "/tag/{slug}"
+  category:
+    type: "page"
+    label: "Categories"
+    urlPath: "/category/{slug}"
+  career:
+    type: "page"
+    label: "Careers"
+    urlPath: "/career/{slug}"
+  post:
+    type: "page"
+    label: "Blog Posts"
+    urlPath: "/post/{slug}"
+  service:
+    type: "page"
+    label: "Services"
+    urlPath: "/service/{slug}"
