@@ -509,6 +509,9 @@ module.exports = function (eleventyConfig, ecommerceFormat, priceTemplate) {
       return format(d, formatString);
     } catch (error) {
       const d = new Date(date);
+      if (isNaN(d)) {
+        return format(new Date(), "yyyy-MM-dd")
+      }
       return format(d, "yyyy-MM-dd");
     }
   });
